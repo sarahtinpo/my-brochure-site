@@ -1,0 +1,12 @@
+.icons_container {
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+}
+
+.icon_container {
+}
+
+.footer_icon {
+	width: 20px;
+}
