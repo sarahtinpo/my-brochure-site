@@ -1,12 +1,179 @@
-.icons_container {
+body {
+	font-family: 'Karla', sans-serif;
+	margin: 0;
+	background: #f5f5f5;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 30px;
+}
+
+header{
+	padding: 20px 40px;
+	background: #fff;
+	align-items: center;
+}
+
+header h1 {
+	grid-column: 1 / span 6;
+}
+
+header nav {
+	grid-column: 7 / span 6;
+	justify-self: end;
+}
+
+header nav a {
+	color: #333;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+main {
+	max-width: 1200px;
+	margin: 60px auto;
+	padding: 20px;
+}
+
+main img {
+	grid-column: span 6;
+	width: 100%;
+	border-radius: 6px;
+}
+
+main .about {
+	grid-column: 8 / span 5;
+}
+
+main > h2 {
+	grid-column: span 12;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 20px;
+}
+
+main .card {
+	grid-column: span 4;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+	text-align: center;
+}
+
+main .blog {
+	grid-column: 4 / span 6;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+}
+
+main .blogDate {
+	text-align: left;
+	font-size: 14px;
+	color: #808080;
+}
+
+.blogpicture {
+	display: block;
+	float: left;
+	padding: 10px 20px 0 0;
+	width: 50%;
+
+}
+
+main .testimonial {
 	display: flex;
-	justify-content: space-between;
-	width: 80px;
+	align-items: center;
+	justify-content: center;
+	grid-column: 3 / span 8;
+	background: #fff;
+	padding: 50px 20px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
 }
 
-.icon_container {
+.testimonialtextleft {
+	padding-left: 25px;
 }
 
-.footer_icon {
-	width: 20px;
+.testimonialtextright {
+	padding-right: 25px;
+}
+
+main .customer {
+	width: 180px;
+	padding: 0 25px;
+}
+
+.comma {
+	font-size: 20px;
+}
+
+footer {
+	background: #fff;
+	padding: 20px 40px;
+}
+
+footer .card {
+	grid-column: span 4;
+	padding: 10px;
+	text-align: center;
+}
+
+.social {
+	display: flex;
+	width: 5%;
+	padding: 5px 0;
+	align-items: fle;
+}
+
+@media screen and (max-width: 960px) {
+	header h1{
+		grid-column: 2 / span 10;
+	}
+	header nav {
+		grid-column: 2 / span 10;
+		justify-self: start;
+	}
+	main img {
+		grid-column: 2 / span 10;
+	}
+	main .about {
+		grid-column: 2 / span 10;
+		text-align: center;
+	}
+	main .card {
+		grid-column: 2 / span 10;
+	}
+	main .testimonial {
+		grid-column: 2 / span 10;
+		flex-direction: column;
+	}
+
+	main .testimonialtextleft {
+		padding-left: 0;
+		padding-bottom: 15px;
+	}
+
+	main .testimonialtextright {
+		padding-right: 0;
+	}
+
+	main .customer {
+		width: 120px;
+	}
+
+	main h2 {
+		grid-column: 2 / span 10;
+	}
+	main .blog {
+		grid-column: 2 / span 10;
+	}
+	footer .card {
+		grid-column: 2 / span 10;
+	}
 }
