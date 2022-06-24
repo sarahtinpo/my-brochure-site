@@ -128,7 +128,6 @@ footer .card {
 	display: flex;
 	width: 5%;
 	padding: 5px 0;
-	align-items: fle;
 }
 
 @media screen and (max-width: 960px) {
